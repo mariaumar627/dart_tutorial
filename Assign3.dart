@@ -167,4 +167,258 @@ void main() {
   bool isBetween = t >= 50 && t <= 100; // range check
 
   print("Number lies between 50 and 100: $isBetween"); // result print
+
+  //21. Determine whether a number is positive, negative or zero.
+  int checkNumber = -10; // number store
+
+  if (checkNumber > 0) {
+    print("$checkNumber is Positive"); // positive number
+  } else if (checkNumber < 0) {
+    print("$checkNumber is Negative"); // negative number
+  } else {
+    print("Number is Zero"); // zero
+  }
+
+  //22. Determine whether a number is even or odd.
+  int evenOddNumber = 25; // number store
+
+  if (evenOddNumber % 2 == 0) {
+    print("$evenOddNumber is Even"); // even number
+  } else {
+    print("$evenOddNumber is Odd"); // odd number
+  }
+
+  //23. Find the largest among two numbers.
+  int firstNumber = 40; // first number store
+  int secondNumber = 80; // second number store
+
+  if (firstNumber > secondNumber) {
+    print("$firstNumber is Larger"); // first number larger
+  } else {
+    print("$secondNumber is Larger"); // second number larger
+  }
+
+  //24. Find the largest among three numbers.
+  int numA = 30; // first number store
+  int numB = 70; // second number store
+  int numC = 50; // third number store
+
+  if (numA > numB && numA > numC) {
+    print("$numA is Largest"); // first number largest
+  } else if (numB > numA && numB > numC) {
+    print("$numB is Largest"); // second number largest
+  } else {
+    print("$numC is Largest"); // third number largest
+  }
+
+  //25. Check whether a person is eligible to vote.
+  int voteAge = 20; // age store
+
+  if (voteAge >= 18) {
+    print("Eligible to Vote"); // eligible
+  } else {
+    print("Not Eligible to Vote"); // not eligible
+  }
+
+  //26. Assign grades based on marks.
+  int marks = 82; // marks store
+
+  if (marks >= 90) {
+    print("Grade A+");
+  } else if (marks >= 80) {
+    print("Grade A");
+  } else if (marks >= 70) {
+    print("Grade B");
+  } else if (marks >= 60) {
+    print("Grade C");
+  } else if (marks >= 50) {
+    print("Grade D");
+  } else {
+    print("Fail");
+  }
+
+  //27. Print the month name using switch.
+  int month = 7; // month number store
+
+  switch (month) {
+    case 1:
+      print("January");
+      break;
+    case 2:
+      print("February");
+      break;
+    case 3:
+      print("March");
+      break;
+    case 4:
+      print("April");
+      break;
+    case 5:
+      print("May");
+      break;
+    case 6:
+      print("June");
+      break;
+    case 7:
+      print("July");
+      break;
+    case 8:
+      print("August");
+      break;
+    case 9:
+      print("September");
+      break;
+    case 10:
+      print("October");
+      break;
+    case 11:
+      print("November");
+      break;
+    case 12:
+      print("December");
+      break;
+    default:
+      print("Invalid Month");
+  }
+
+  //28. Print the weekday using switch.
+  int day = 3; // day number store
+
+  switch (day) {
+    case 1:
+      print("Monday");
+      break;
+    case 2:
+      print("Tuesday");
+      break;
+    case 3:
+      print("Wednesday");
+      break;
+    case 4:
+      print("Thursday");
+      break;
+    case 5:
+      print("Friday");
+      break;
+    case 6:
+      print("Saturday");
+      break;
+    case 7:
+      print("Sunday");
+      break;
+    default:
+      print("Invalid Day");
+  }
+
+  //29. Check whether a year is a leap year.
+  int year = 2024; // year store
+
+  if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+    print("$year is Leap Year"); // leap year
+  } else {
+    print("$year is Not Leap Year"); // not leap year
+  }
+
+  //30. Create a calculator using switch.
+  int value1 = 20; // first number store
+  int value2 = 10; // second number store
+  String operator = "+"; // operator store
+
+  switch (operator) {
+    case "+":
+      print("Addition = ${value1 + value2}");
+      break;
+    case "-":
+      print("Subtraction = ${value1 - value2}");
+      break;
+    case "*":
+      print("Multiplication = ${value1 * value2}");
+      break;
+    case "/":
+      print("Division = ${value1 / value2}");
+      break;
+    default:
+      print("Invalid Operator");
+  }
+
+  //31. Print numbers from 1 to 20.
+  for (int i = 1; i <= 20; i++) {
+    print(i);
+  }
+
+  //32. Print numbers from 20 to 1.
+  for (int i = 20; i >= 1; i--) {
+    print(i);
+  }
+
+  //33. Print all even numbers from 1 to 100.
+  for (int i = 1; i <= 100; i++) {
+    if (i % 2 == 0) {
+      print(i);
+    }
+  }
+
+  //34. Print all odd numbers from 1 to 100.
+  for (int i = 1; i <= 100; i++) {
+    if (i % 2 != 0) {
+      print(i);
+    }
+  }
+
+  //35. Find the sum of numbers from 1 to 100.
+  int sum = 0; // sum variable
+
+  for (int i = 1; i <= 100; i++) {
+    sum += i;
+  }
+
+  print("Sum = $sum");
+
+  //36. Print the multiplication table of any number.
+  int tableNumber = 5; // table number store
+
+  for (int i = 1; i <= 10; i++) {
+    print("$tableNumber x $i = ${tableNumber * i}");
+  }
+
+  //37. Find the factorial of a number.
+  int factNumber = 5; // number store
+  int factorial = 1; // factorial variable
+
+  for (int i = 1; i <= factNumber; i++) {
+    factorial *= i;
+  }
+
+  print("Factorial = $factorial");
+
+  //38. Print multiples of 7 between 1 and 100.
+  for (int i = 1; i <= 100; i++) {
+    if (i % 7 == 0) {
+      print(i);
+    }
+  }
+
+  //39. Count numbers divisible by both 3 and 5 from 1 to 100.
+  int count = 0; // counter
+
+  for (int i = 1; i <= 100; i++) {
+    if (i % 3 == 0 && i % 5 == 0) {
+      count++;
+    }
+  }
+
+  print("Total Count = $count");
+
+  //40. Print the following pattern.
+  /*
+  *
+  **
+  ***
+  ****
+  *****
+  */
+
+  for (int i = 1; i <= 5; i++) {
+    print("*" * i);
+  }
 }
